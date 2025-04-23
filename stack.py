@@ -66,30 +66,29 @@
 # # Run the program
 # main()
 # Create an empty stack
+
 stack = []
 
-# Push elements onto the stack
+stack.append(8)
+stack.append(9)
 stack.append(10)
-stack.append(20)
-stack.append(30)
 
 print("Current Stack:", stack)
 
-# Peek at the top element (last one added)
+#(last one added)
 print("Top Element:", stack[-1])
 
-# Pop (remove) the top element
+#(remove)
 popped = stack.pop()
 print("Popped Element:", popped)
 
-# Stack after popping
+
 print("Stack Now:", stack)
 
-# Check if stack is empty
 if not stack:
     print("Stack is empty")
 else:
     print("Stack is not empty")
-# Output the final state of the stack
+
 print("Final State of Stack:", stack)
 
