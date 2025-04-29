@@ -11,7 +11,7 @@ a = ["1,2,3,2,1"]
 def palindrome(a):
     
     if a == a[::-1]:
-        print("122")
+        print("1229")
     else:
         print("123")
 
