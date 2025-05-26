@@ -1,5 +1,4 @@
-from function_sum import calculate
-
+from function_sum import calculate 
 result = calculate("", "")
 
 print(result);

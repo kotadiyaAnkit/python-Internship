@@ -1,0 +1,4 @@
+Hello binary world!
+New appended binary data.
+New appended binary data.
+New appended binary data.

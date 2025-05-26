@@ -27,7 +27,7 @@
 # else:
 #     print(False)
 
-str="hello_world"
+str = "hello_world"
 
 # print(len(str))
 
@@ -35,4 +35,4 @@ str="hello_world"
 
 str.index('l')
 str.index('h')
-print(str.index)
+# print(str.index)

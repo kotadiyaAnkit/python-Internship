@@ -44,13 +44,25 @@ print(slice)
 
 
 
-number = int(input("Enter a numeber:"))
-number1 = int(input("Enter a numeber:"))
-number2 = int(input("Enter a numeber:"))
+fir = int(input("Enter a numeber:"))
+# sec = int(input("Enter a numeber:"))
+# thri = int(input("Enter a numeber:"))
+# four = int(input("Enter a numeber:"))
 
-if(number>=number1):
-    print("bifg",number)
-elif(number1>=number2):
-    print("big value",number1)
-elif(number2>=number):
-    print("bbig",number2)
+
+# if(fir>=sec ):
+#     print("bifg",fir)
+# elif(sec>=thri):
+#     print("big value",sec)
+# elif(thri>=four):
+#     print("big",thri)
+# elif(four>=fir):
+#     print("big",four)
+    
+
+    
+    
+if(fir % 7==0):
+    print("mutiple")
+else:
+    print("not")
