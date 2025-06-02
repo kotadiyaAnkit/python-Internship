@@ -1,36 +1,42 @@
-class shape():
-    
+class Shape:
     def area(self):
-        print("Total of a area")
-        
-class circle(shape):
-    def size_circel(self,readuis):
-        self.radius = readuis
-        self.area = 3.14 * (self.radius ** 2)
-        print("Area of a circle is ", self.area)
-        
-        def area():
-            return("Total of a area",shape)
-        
-        
-class rectangle(shape):
-    def size_rectangle(self,readuis,readuis2):
-        self.length = readuis
-        self.width = readuis2
-        self.area = self.length * self.width
-        print("Area of a rectangle is ", self.area)
-        
-class square(shape):
-    def size_square(self,readuis):
-        self.length = readuis
-        self.area = self.length * self.length
-        print("Area of a square is ", self.area)
-        
-        
-        
-circle(4)
-rectangle(5,6)
-square(7)
+        print("Total area of the shape")
 
 
-    
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        area = 3.14 * (self.radius ** 2)
+        print("Area of a circle is", area)
+
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        area = self.length * self.width
+        print("Area of a rectangle is", area)
+
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        area = self.side ** 2
+        print("Area of a square is", area)
+
+
+# Create objects and call area methods
+c = Circle(4)
+c.area()
+
+r = Rectangle(5, 6)
+r.area()
+
+s = Square(7)
+s.area()

@@ -16,3 +16,12 @@ def recusion(a):
         return a*recusion(a-1)
 
 print(recusion(3))
+
+# n=6
+# fast = 1
+
+# for  i in range(1,n+1):
+#     fast *= i
+#     break
+#     print(fast)
+    

@@ -38,7 +38,6 @@ c = Cat()
 
 # Calling the overridden method
 a.speak()
-
 print(d.speak()) 
 print(c.speak())  
 
