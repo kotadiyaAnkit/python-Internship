@@ -9,8 +9,8 @@ class B():
 
 class C(A, B):
     def show(self):
-        print("",self.a)
-        print("",self.b)
+        print("Class A:",self.a)
+        print("Class B:",self.b)
         
 
 

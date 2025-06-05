@@ -17,6 +17,7 @@ c.start
 print(c.name)
 
 e = electric_car("asd")
+c.start
 print(e.name)
 
 print(e.sound())

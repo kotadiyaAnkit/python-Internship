@@ -23,8 +23,9 @@ class Child(Parent1, Parent2):
 		print("Inside Child") 
 	
 		
-# Driver's code 
+#create a obj of child class
 obj = Child() 
 
 obj.show() 
 obj.display()
+

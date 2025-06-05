@@ -1,7 +1,5 @@
 # First product method.
-# Takes two argument and print their
-# product
-
+#Two or more methods have the same name but different numbers of parameters or different types of parameters, or both.
 
 def product(a, b):
     p = a * b
@@ -9,7 +7,6 @@ def product(a, b):
 
 # Second product method
 # Takes three argumenta and print their
-# product
 
 
 def product(a, b, c):
@@ -24,8 +21,7 @@ def product(a, b, c):
 product(4, 5, 5)
 
 
-# Python program to demonstrate 
-# Python program to demonstrate 
+
 # overriding in multilevel inheritance 
 
 class Parent(): 

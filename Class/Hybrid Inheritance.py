@@ -15,8 +15,6 @@ class d(c, b):
         print("four class")
     
 A1 = Preson()
-A2 = b()
-A3 = c()
 A4 = d()
 
 A4.first()

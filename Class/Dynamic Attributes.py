@@ -7,12 +7,12 @@ p.age = 22  #dynamic attribute
 
 print(p.name)
 print(p.age)
-
+print("\n")
 
 #explain this program 
 class OuterClass:
     def __init__(self):
-        self.title = "Main Class"
+        self.title = "Main Class" 
 
     class FirstClass:
         def __init__(self):
