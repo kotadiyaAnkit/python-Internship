@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if form.instance.pk %}Update{% else %}Add{% endif %} Student</title>
+   <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'student' %}">Student</a>
+    
+</nav>
+
+<h2>{% if form.instance.pk %}Update{% else %}Enter{% endif %} Student Details</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% if form.instance.pk %}Update{% else %}Submit{% endif %}</button>
+</form>
+
+<form action="{% url 'show' %}">
+    <button type="submit" >Display</button>
+</form>
+
+</body>
+</html>
