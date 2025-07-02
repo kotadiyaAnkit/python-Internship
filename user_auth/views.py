@@ -67,6 +67,7 @@ def register_view(request):
             messages.error(request, 'Names must contain only letters.')
             return redirect('register')
 
+
         # Save user securely
         User.objects.create_user(
             username=username,
