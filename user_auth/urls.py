@@ -20,11 +20,15 @@ urlpatterns = [
     path("student/", views.student_register, name='student'),
     
     path('students/', views.student_register, name='student_list'),
-     path('show/', views.student_list, name='show'), 
-     path('student/update/<int:pk>/', views.student_update, name='student_update'),
-   path('student/delete/<int:pk>/', views.student_delete, name='student_delete'),
+    path('show/', views.student_list, name='show'), 
+    path('student/update/<int:pk>/', views.student_update, name='student_update'),
+    path('student/delete/<int:pk>/', views.student_delete, name='student_delete'),
 
+     path('logout/', views.logout_view, name='logout'),
 
     path('login/', login_page, name='login_page'),    # Login page
-    path('register/', register_view, name='register')
+    path('register/', register_view, name='register'),
+    
+    
+   
 ]

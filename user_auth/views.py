@@ -7,8 +7,10 @@ from django.contrib.auth import authenticate, login
 
 import re
 from .models import Student
-
 from .forms import StudentForm
+
+from django.contrib.auth import logout
+
 
 # Create your views here.
 def home(request):
@@ -129,4 +131,8 @@ def student_delete(request, pk):
     return redirect('show')
     # return render(request, 'display.html', {'student': student})
 
+def logout_view(request):
+    logout(request)
+    messages.success(request, "You have been logged out.")
+    return redirect('login_page')
 

@@ -1,0 +1,16 @@
+
+
+<!-- In navbar.html -->
+<div class="burger" onclick="toggleMenu()">☰</div>
+<ul id="nav-links" class="nav-links">
+  <li><a href="{% url 'home' %}">Home</a></li>
+  <li><a href="{% url 'about' %}">About</a></li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+</ul>
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('nav-links');
+  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+}
+</script>

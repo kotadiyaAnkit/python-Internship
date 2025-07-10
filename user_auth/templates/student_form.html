@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>{% if form.instance.pk %}Update{% else %}Add{% endif %} Student</title>
-   <link rel="stylesheet" href="{% static 'styles.css' %}">
+   <link rel="stylesheet" href="{% static 'student_form.css' %}">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <a href="{% url 'about' %}">About</a>
     <a href="{% url 'contact' %}">Contact Us</a>
     <a href="{% url 'student' %}">Student</a>
-    
+    <a href="{% url 'logout' %}">Logout</a>
 </nav>
 
 <h2>{% if form.instance.pk %}Update{% else %}Enter{% endif %} Student Details</h2>

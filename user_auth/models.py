@@ -7,6 +7,8 @@ from django.core.validators import RegexValidator, EmailValidator
 from django.db import models
 import re
 
+
+
 class Student(models.Model):
     first_name = models.CharField(
         max_length=30,
@@ -18,7 +20,7 @@ class Student(models.Model):
     )
     stream = models.CharField(
         max_length=50,
-        validators=[RegexValidator(r'^[A-Za-z\s]+$', 'Stream must contain only letters and spaces.')]
+        validators=[RegexValidator(r'^[A-Za-z\s]+$', 'Stream must contain only letters and spaces.')]    
     )
     email = models.EmailField(
         unique=True,
@@ -38,16 +40,6 @@ class Student(models.Model):
         if Student.objects.exclude(pk=self.pk).filter(phone=self.phone).exists():
             raise ValidationError({'phone': 'This phone number is already registered.'})
 
-# class Student(models.Model):
-#     first_name = models.CharField(max_length=30)
-#     last_name = models.CharField(max_length=30)
-#     stream = models.CharField(max_length=50)
-#     email = models.EmailField(unique=True)
-#     phone = models.CharField(max_length=15)
 
-#     def __str__(self):
-#         return f"{self.first_name} {self.last_name}"
-
-# Create your models here.
 
 
