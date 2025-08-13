@@ -10,4 +10,3 @@ while stack:
     
 print(reversed_str) 
 
-    

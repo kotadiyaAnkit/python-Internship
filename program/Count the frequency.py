@@ -10,4 +10,4 @@ for char in word:
 print(frequency)
 
 
-f = open("")
+# f = open("")
