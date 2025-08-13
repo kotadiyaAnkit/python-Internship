@@ -14,3 +14,5 @@ s1 = Student("jack", [99, 88, 88])
 print(s1.name, s1.mark)  # Output: jack [99, 88, 88]
 
 
+
+
