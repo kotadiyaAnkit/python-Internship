@@ -18,7 +18,7 @@ table_n2 = [n2 * i for i in range(1, 11)]
 diff = [table_n1[i] - table_n2[i] for i in range(10)]
 
 # Print first line: table of n1
-print(" ".join(map(str, table_n1)))
+print(" ".join(map(str, table_n1))) #Converts the numbers into strings. Joins them with a space " " and prints.
 
 # Print second line: table of n2
 print("- " + " ".join(map(str, table_n2)))
@@ -27,4 +27,4 @@ print("- " + " ".join(map(str, table_n2)))
 print("-" * 41)
 
 # Print result line: differences
-print("= " + " ".join(map(str, diff)), end="")
+print("= " + " ".join(map(str, diff)), end="")  #Same technique: convert to string, join with space, and add =. end="" makes sure no extra newline is printed at the end.
