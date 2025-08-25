@@ -19,7 +19,7 @@ c = txt.count("hello")
 print(c)
 
 #center
-txt = "apple"
+txt = "  apple"
 
 d = txt.center(20)
 
