@@ -18,5 +18,5 @@ def find_gcd(x, y):
         x, y = y, x % y
     return x
 
-a = int(input())
+a = int(input()) 
 b = int(input())
