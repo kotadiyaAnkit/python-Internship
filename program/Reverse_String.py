@@ -10,3 +10,5 @@ while stack:
     
 print(reversed_str) 
 
+s="hello"
+print(s[::-1])
