@@ -10,5 +10,3 @@ else:
             break
     else:
         print("True")
-    
-

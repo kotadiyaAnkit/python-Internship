@@ -1,21 +1,19 @@
-#You are given a string s, you need to print its characters at even indices (index starts at 0).
 class Solution:
     def print_even_indices(self, s: str):
-        #code here
         for i in range(0, len(s), 2):
-            print(s[i],end="")
-  
+            print(s[i], end="")
+
 s1 = Solution()
-s1.print_even_indices("Geeks")  # Output: Hlool
+s1.print_even_indices("Geeks")  # Output: Gks
 print("\n---------------------------------------------")
 
-x = int(input())
-while x >=0:
+x = int(input("Enter a number: "))
+while x >= 0:
     print(x, end=" ")
-    x-=1
-    
-x="GFG"
+    x -= 1
 
-for i in range(x):
+print("\n---------------------------------------------")
 
-    print(i)
+x = "GFG"
+for i in range(len(x)):
+    print(f"Index {i}: {x[i]}")
