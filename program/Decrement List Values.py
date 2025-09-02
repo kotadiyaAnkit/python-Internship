@@ -6,4 +6,4 @@ print(arr)
 """
 single line code
 print([x - 1 for x in arr])
- """
+ """    
