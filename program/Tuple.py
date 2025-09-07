@@ -1,18 +1,18 @@
 # Using Built-in Function
-tup = tuple("milan")
-print(tup)
+tu = tuple("milan")
+print(tu)
 
 
 #Demonstrates how to correctly define a tuple with only one element.
-tuple = (1,)
-print(tuple)
+tup = (1,)
+print(tup)
 
 #Tuple Concatenation
-tuple = (1,2,3,4)
+tupl = (1,2,3,4)
 tuple1 = (5,6,7,8,)
 tuple2 = ('qwewe','lion')
 
-a = tuple+tuple1+tuple2
+a = tupl+tuple1+tuple2
 print(a) 
 
 # multipal time a print a value
@@ -30,39 +30,11 @@ tuple4 = (10,20,30,40,50)
 slice= tuple4[1:4]
 print(slice)
 
-# # Slicing of a Tuple with Numbers
-# tup = tuple('GEEKSFORGEEKS')
 
-# # Removing First element
-# print(tup[1:])
-
-# # Reversing the Tuple
-# print(tup[::-1])
-
-# # Printing elements of a Range
-# print(tup[4:9])
-
-
-
-fir = int(input("Enter a numeber:"))
-# sec = int(input("Enter a numeber:"))
-# thri = int(input("Enter a numeber:"))
-# four = int(input("Enter a numeber:"))
-
-
-# if(fir>=sec ):
-#     print("bifg",fir)
-# elif(sec>=thri):
-#     print("big value",sec)
-# elif(thri>=four):
-#     print("big",thri)
-# elif(four>=fir):
-#     print("big",four)
-    
 
     
-    
-if(fir % 7==0):
-    print("mutiple")
-else:
-    print("not")
+def doubleTup(numbers):
+    return tuple(num * 2 for num in numbers)
+
+tup = (4, 5, 1, 2, 3, 5)
+print(doubleTup(tup))  # Output: (8, 10, 2, 4, 6, 10)
