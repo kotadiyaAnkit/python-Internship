@@ -8,6 +8,3 @@ for char in word:
         frequency[char] = 1 
 
 print(frequency)
-
-
-# f = open("")
