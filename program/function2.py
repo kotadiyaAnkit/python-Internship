@@ -19,16 +19,3 @@ positiona(3)
 def keyword_only(*,x):
     print(x)
     keyword_only(x=1)
-
-
-
-
-
-
-
-
-
-
-
-
-
