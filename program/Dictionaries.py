@@ -44,11 +44,6 @@ i = {
         "name": "John",
         "sun" : ["asd","asd","asd"],
         "age": 25,
-        # "topc" : ("asjdh","set"),
-        # 88 : 23,
-        # "is": True,
-        # 12.98 :22.12
-        
 }
 
 #exchaged value
