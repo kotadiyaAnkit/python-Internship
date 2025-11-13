@@ -12,7 +12,7 @@ str1 = 'hello_python'
 str1.rindex('o',0,5)
 str1.rindex('o',-11,5)
 str1.rindex('')
-
+print(str1)
 
 str2 = 'python hello'
 str2.rfind('o')
